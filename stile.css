@@ -120,6 +120,8 @@ footer{
     padding:1rem;
     background-color: #272d2d;
     color: white;
+    position:  absolute;
+    bottom:0;
 }
 footer a{
 	text-decoration:none;
@@ -242,6 +244,8 @@ footer a:hover{
         padding:1rem;
         background-color: #272d2d;
         color: white;
+	position:  absolute;
+	bottom:0;
     }
     footer a{
         text-decoration:none;
