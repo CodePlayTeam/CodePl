@@ -59,7 +59,7 @@ header a:hover{
     background-color: #a39ba8;
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     column-gap: 2rem;
     padding: 1.3rem 2rem 1.3rem 2rem;
     border-radius: 2rem;
@@ -79,6 +79,7 @@ header a:hover{
     margin: 0rem auto 0rem auto;
 }
 .paragrafi button{
+    grid-column: 1 / span 2;
     width: 20rem;
     background-color: #23ce6b;
     height: auto;
