@@ -96,6 +96,11 @@ header a:hover{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+.paragrafi div{
+    text-align:center;
+    margin-top:auto;
+    margin-top:auto;
+}
 .lista{
 	font-size:2rem;
 }
