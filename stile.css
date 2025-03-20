@@ -181,13 +181,14 @@ footer a:hover{
         max-width: 100%;
         height: auto;
         margin: 1.2rem 2.5rem 1.2rem 2.5rem;
-        background-color: #a39ba8;
+        background-color: red;
+/*#a39ba8;*/
         display: grid;
         grid-template-columns: 1.3fr 1fr;
         grid-template-rows: auto auto;
         column-gap: 1.8rem;
         padding: 1.3rem 2rem 1.3rem 2rem;
-        border-radius: 20rem;
+        border-radius: 2rem;
     }
     .paragrafi h1{
         font-size: 1.8rem;
