@@ -98,8 +98,6 @@ header a:hover{
 }
 .paragrafi div{
     text-align:center;
-    margin-top:auto;
-    margin-buttom:auto;
 }
 .lista{
 	font-size:2rem;
@@ -199,7 +197,7 @@ footer a:hover{
         font-family:Trebuchet ms;
     }
     .paragrafi p{
-        font-size: 22px;
+        font-size: 16px;
         font-family: sans-serif;
     }
     .paragrafi img{
