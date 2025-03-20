@@ -39,6 +39,19 @@
 				background-color: #45a049;
 		}
 	</style>
+	<script>
+	        function switchCSS() {
+	            const width = window.innerWidth;
+	            const stylesheet = document.getElementById('responsive-stylesheet');
+	            if (width > 1000) {
+	                stylesheet.href = 'stile.css';
+	            } else {
+	                stylesheet.href = 'stile2.css';
+	            }
+	        }
+	        switchCSS();
+	        window.addEventListener('resize', switchCSS);
+    </script>
     </head>
     <body>
 	<div class="cookie-banner" id="cookieBanner">
