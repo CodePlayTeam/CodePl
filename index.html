@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="CodePlay Team" content="Raccolta fondi">
-        <title>CodePlay Team</title>
-	<link id="responsive-stylesheet" rel="stylesheet" href="stile.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name="CodePlay Team" content="Raccolta fondi">
+	<title>CodePlay Team</title>
+	<link rel="stylesheet" href="stile_pc.css" media="screen and (min-width:1000px)">
+	<link rel="stylesheet" href="stile_mobile.css" media="screen and (max-width:1024px)">
 	<link rel="icon" href="img/logo.jpg" type="image/x-icon">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="animazioni.js"></script>
 	<style>
-		.cookie-banner {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0, 0, 0, 0.8);
-				color: white;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				z-index: 1000;
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
 		}
-
-		.cookie-banner button {
-				padding: 10px 20px;
-				font-size: 16px;
-				margin-top: 20px;
-				border: none;
-				background-color: #4CAF50;
-				color: white;
-				cursor: pointer;
-				border-radius: 5px;
+		#cookieBanner {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			color: white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
 		}
-
-		.cookie-banner button:hover {
-				background-color: #45a049;
+		#cookieBanner button {
+			margin-top: 20px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
 		}
 	</style>
-    </head>
-    <body>
-	<div class="cookie-banner" id="cookieBanner">
-		<h2>Usiamo i cookie</h2>
-		<p>Per migliorare la tua esperienza, utilizziamo i cookie sul nostro sito. Premendo "Accetta", accetti i nostri termini.</p>
-		<button onclick="closeCookieBanner()">Accetta</button>
+</head>
+<body>
+	<div id="cookieBanner">
+			<p>Questo sito utilizza cookie per migliorare l'esperienza di navigazione. Accetti?</p>
+			<button onclick="acceptCookies()">Accetta</button>
 	</div>
 	<script>
-		function closeCookieBanner() {
-			const banner = document.getElementById('cookieBanner');
-			banner.style.display = 'none';
+		// Controllo se l'utente ha già accettato i cookie
+		if (localStorage.getItem('cookiesAccepted') === 'true') {
+				document.getElementById('cookieBanner').style.display = 'none';
+		}
+
+		function acceptCookies() {
+				localStorage.setItem('cookiesAccepted', 'true');
+				document.getElementById('cookieBanner').style.display = 'none';
 		}
 	</script>
-        <header>
-	        <div>
-			<img src="img/logo.jpg">
-			<a href="index.html"><h1>CODE PLAY</h1></a>
-		</div>
-		<div>
-			<a href="altro.html">SCOPRI DI PIÚ</a>
-			<a href="sponsor.html">SPONSORS</a>
-			<a href="#contatti">CONTATTACI</a>
-		</div>
-        </header>
+		<header>
+			<div>
+				<img src="img/logo.jpg">
+				<a href="index.html"><h1>CODE PLAY</h1></a>
+			</div>
+			<div>
+				<a href="#ritorno">SCOPRI DI PIÚ</a>
+				<a href="sponsor.html">SPONSORS</a>
+				<a href="#contatti">CONTATTACI</a>
+			</div>
+		</header>
 		<div class="paragrafi">
 			<h1>CHI SIAMO</h1>
 			<p>Ciao! Noi siamo Code Play Team, una squadra di studenti dell'Istituto di Istruzione Statale Superiore Copernico-Pasoli interessati nel mondo dell’informatica e della robotica.<br> Grazie agli Italian Championship, svolti a Lignano Sabbiadoro il 20,21 e 22 Febbraio 2025, abbiamo ottenuto il titolo di prima squadra italiana, perciò abbiamo delle buone credenziali per partecipare ed eventualmente vincere le selezioni per decidere la squadra che rappresenterà l'Italia ai mondiali di Panama.</p>
@@ -78,11 +78,11 @@
 			<p>Ogni contributo ci aiuta a portare avanti il nostro sogno! Con una donazione, ci aiuti a coprire i costi per materiali, trasporti e competizioni.</p>
 			<div><a href="https://idearium.pubblica.istruzione.it/crowdfunding/progetti/83878/dettaglio"><button>Dona ora!!</button></a></div>
 		</div>
-        <footer id="contatti">
-            <p>Se vuoi saperne di più sul nostro progetto o hai domande, non esitare a contattarci!!</p>
-            <p>Email: <a href="mailto:codeplayteam.business@gmail.com">codeplayteam.business@gmail.com</a></p>
-            <p>Telefono: <ul><li>Giorgia Merola:<a href="tel:+393738538593">+39 373 853 8593</a></li><li>Denis Sammartano:<a href="tel:+393277113349">+39 327 711 3349</a></li></ul></p>
-            <p>&copy; 2025 Code Play Team. Tutti i diritti riservati.</p>
-        </footer>
-    </body>
+		<footer id="contatti">
+				<p>Se vuoi saperne di più sul nostro progetto o hai domande, non esitare a contattarci!!</p>
+				<p>Email: <a href="mailto:codeplayteam.business@gmail.com">codeplayteam.business@gmail.com</a></p>
+				<p>Telefono: <ul><li>Giorgia Merola:<a href="tel:+393738538593">+39 373 853 8593</a></li><li>Denis Sammartano:<a href="tel:+393277113349">+39 327 711 3349</a></li></ul></p>
+				<p>&copy; 2025 Code Play Team. Tutti i diritti riservati.</p>
+		</footer>
+	</body>
 </html>

@@ -1,0 +1,177 @@
+/* IMPOSTAZIONE BASE*/
+
+html{
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+body{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/* COOKIE */
+
+#cookieBanner {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+    display: none;
+    z-index: 2000;
+}
+#cookieBanner div{
+    background-color: #edf5fc;
+}
+#cookieBanner button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header{
+    max-width: 100%;
+    min-width: 500px;
+    max-height: 12rem;
+    background-color: #272d2d;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+	font-size:1.4rem;
+	font-family:Courier;
+}
+header div{
+    width: auto;
+    max-height: 10rem;
+    display: flex;
+    align-items: center;
+}
+header img{
+    max-height: 100%;
+}
+header a{
+    color: white;
+    font-size: 2.2rem;
+    text-decoration: none;
+    padding: 1.6rem;
+    margin: auto auto auto auto;
+    transition-duration: 0.3s;
+	font-weight:580;
+}
+header a h1{
+	font-size:3rem;
+	margin:0rem;
+	padding:0rem;
+}
+header button{
+	font-size:2rem;
+	color:white;
+	background-color:transparent;
+	border:none;
+}
+header a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+/* PARAGRAFI */
+
+.paragrafi{
+    max-width: 100%;
+    height: auto;
+    margin: 1.4rem 3rem 1.4rem 3rem;
+    background-color: #a39ba8;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 2rem;
+    padding: 1.3rem 2rem 1.3rem 2rem;
+    border-radius: 2rem;
+}
+.paragrafi h1{
+    font-size: 33px;
+    max-height: 100%;
+    grid-column: 1 / span 2;
+    text-align: center;
+	font-family:Trebuchet ms;
+}
+.paragrafi p{
+    font-size: 9px;
+    font-family: sans-serif;
+}
+.paragrafi img{
+    height: 14rem;
+    margin: 0rem auto 0rem auto;
+}
+.paragrafi button{
+    grid-column: 1 / span 2;
+    width: 20rem;
+    background-color: #23ce6b;
+    height: auto;
+    margin: auto;
+    grid-column: 1 / span 2;
+    font-size: 25px;
+    border: none;
+    border-radius: 1.4rem;
+    padding: 1.1rem;
+    box-shadow: 0 5px #666;
+}
+.paragrafi button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* LISTA INFO */
+
+.lista{
+	font-size:13px;
+}
+.titolo{
+	background-color:#edf5fc;
+	max-width:100%;
+	max-height:10rem;
+	padding:3.85rem;
+}
+.titolo h1{
+	font-size:2.3rem;
+	color:black;
+	text-align:center;
+}
+.lista a{
+	text-decoration:none;
+	color:black;
+}
+.lista a:hover{
+	text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+    font-family: Lucida Console;
+    padding:1rem;
+    background-color: #272d2d;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+footer a{
+	text-decoration:none;
+	color:white;
+}
+footer a:hover{
+    text-decoration: underline;
+}
