@@ -38,14 +38,17 @@ body{
 header{
     max-width: 100%;
     max-height: 12rem;
-    background-color: #272d2d;
+    background-color: #000000;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1.8fr;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  	grid-template-rows: auto;
+  	column-gap: 2vw;
+  	padding: 2vw;
     position: sticky;
     top: 0;
     z-index: 1;
-	font-size:1.4rem;
+	font-size: clamp(18px,3vw,20px);
 	font-family:Courier;
 }
 header div{
@@ -71,12 +74,6 @@ header a h1{
 	margin:0rem;
 	padding:0rem;
 }
-header button{
-	font-size:2rem;
-	color:white;
-	background-color:transparent;
-	border:none;
-}
 header a:hover{
     color: black;
     background-color: white;
@@ -95,7 +92,6 @@ header a:hover{
     grid-template-rows: auto auto auto;
     column-gap: 2rem;
     padding: 1.3rem 2rem 1.3rem 2rem;
-    border-radius: 2rem;
 }
 .paragrafi h1{
     max-height: 100%;
